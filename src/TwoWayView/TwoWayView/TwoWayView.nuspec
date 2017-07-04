@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TwoWayView</id>
+    <version>$version$</version>
+    <title>TwoWayView</title>
+    <authors>yuka1984</authors>
+    <owners>yuka1984</owners>
+    <licenseUrl>https://raw.githubusercontent.com/yuka1984/TwoWayView/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/yuka1984/TwoWayView</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>lucasr twoway-view clone for Wamarin Android. It is not use Binding.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright yuka1984 2017</copyright>
+    <tags>Xamarin XamarinAndroid TwoWayView RecyclerView Grid</tags>  
+  </metadata>
+</package>

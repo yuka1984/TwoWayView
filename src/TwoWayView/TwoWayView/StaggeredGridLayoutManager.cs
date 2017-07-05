@@ -1,8 +1,10 @@
 ﻿#region
 
+using System;
 using Android.Content;
 using Android.Graphics;
 using Android.OS;
+using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Views;
@@ -21,7 +23,10 @@ namespace TwoWayView.Layout
 		private static readonly int DEFAULT_NUM_COLS = 2;
 		private static readonly int DEFAULT_NUM_ROWS = 2;
 
+		public StaggeredGridLayoutManager(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+		{
 
+		}
 		public StaggeredGridLayoutManager(Context context) : this(context, null)
 		{
 			;

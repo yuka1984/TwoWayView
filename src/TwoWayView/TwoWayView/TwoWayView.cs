@@ -59,7 +59,7 @@ namespace TwoWayView.Layout
 			}
 			catch (Exception e)
 			{
-				throw new IllegalStateException("Could not load TwoWayLayoutManager from " +
+				throw new ArgumentException("Could not load TwoWayLayoutManager from " +
 				                                "class: " + name);
 			}
 		}

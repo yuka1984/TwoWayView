@@ -54,6 +54,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="TwoWayView, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TwoWayView.1.0.2\lib\MonoAndroid71\TwoWayView.dll</HintPath>
+    </Reference>
+    <Reference Include="TwoWayView.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TwoWayView.1.0.2\lib\MonoAndroid71\TwoWayView.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.3.1\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
     </Reference>
@@ -198,16 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values-port\styles.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TwoWayView.Core\TwoWayView.Core.csproj">
-      <Project>{1df45f6b-fc81-471e-808c-72eabfdbad86}</Project>
-      <Name>TwoWayView.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TwoWayView\TwoWayView.csproj">
-      <Project>{be185e6c-6e1a-4d9a-af31-5a621fb5be5e}</Project>
-      <Name>TwoWayView</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

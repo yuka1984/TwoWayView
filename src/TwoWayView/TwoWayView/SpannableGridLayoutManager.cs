@@ -3,6 +3,7 @@
 using System;
 using Android.Content;
 using Android.OS;
+using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Views;
@@ -22,7 +23,10 @@ namespace TwoWayView.Layout
 		private static readonly int DEFAULT_NUM_COLS = 3;
 		private static readonly int DEFAULT_NUM_ROWS = 3;
 		private bool _measuring;
+		public SpannableGridLayoutManager(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+		{
 
+		}
 		public SpannableGridLayoutManager(Context context) : this(context, null)
 		{
 			

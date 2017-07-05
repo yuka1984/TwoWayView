@@ -82,7 +82,7 @@ namespace TwoWayView.Sample
 				}
 			});
 
-			itemClick.SetOnItemLongClickListener(new ItemClickSupport.OnItemClickListener
+			itemClick.SetOnItemLongClickListener(new ItemClickSupport.OnItemClickListener()
 			{
 				OnItemLongClickedAction = (parent, position, v) =>
 				{

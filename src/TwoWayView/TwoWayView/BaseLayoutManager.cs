@@ -1,15 +1,17 @@
 ﻿#region
 
+using System;
 using Android.Content;
 using Android.Graphics;
 using Android.OS;
+using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Java.Lang;
 using TwoWayview.Layout;
 using TwoWayView.Core;
+using Object = Java.Lang.Object;
 
 #endregion
 
@@ -25,6 +27,10 @@ namespace TwoWayView.Layout
 		private Lanes _lanesToRestore;
 		protected readonly Lanes.LaneInfo TempLaneInfo = new Lanes.LaneInfo();
 		protected readonly Rect TempRect = new Rect();
+		protected BaseLayoutManager(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+		{
+
+		}
 
 		protected BaseLayoutManager(Context context, IAttributeSet attrs) : this(context, attrs, 0)
 		{

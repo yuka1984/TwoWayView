@@ -1,6 +1,8 @@
 ﻿#region
 
+using System;
 using Android.Content;
+using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Widget;
@@ -20,6 +22,10 @@ namespace TwoWayView.Layout
 
 		private int _numColumns;
 		private int _numRows;
+		public GridLayoutManager(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+		{
+
+		}
 
 		public GridLayoutManager(Context context, IAttributeSet attrs) : this(context, attrs, 0)
 		{

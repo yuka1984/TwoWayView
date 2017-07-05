@@ -38,11 +38,16 @@ namespace TwoWayView.Core
 		private int _pendingScrollPosition = RecyclerView.NoPosition;
 		private RecyclerView _recyclerView;
 
-		protected TwoWayLayoutManager(Context context, IAttributeSet attrs) : this(context, attrs, 0)
+		protected TwoWayLayoutManager(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
+		{
+			
+		}
+
+		public TwoWayLayoutManager(Context context, IAttributeSet attrs) : this(context, attrs, 0)
 		{
 		}
 
-		protected TwoWayLayoutManager(Context context, IAttributeSet attrs, int defStyle)
+		public TwoWayLayoutManager(Context context, IAttributeSet attrs, int defStyle)
 		{
 			_context = context;
 			var a =
@@ -64,7 +69,7 @@ namespace TwoWayView.Core
 			a.Recycle();
 		}
 
-		protected TwoWayLayoutManager(Orientation orientation)
+		public TwoWayLayoutManager(Orientation orientation)
 		{
 			_isVertical = orientation == Orientation.Vertical;
 		}
